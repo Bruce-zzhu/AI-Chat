@@ -1,5 +1,5 @@
 import { Configuration, OpenAIApi } from 'openai'
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import sendIcon from './sendIcon.svg'
 
