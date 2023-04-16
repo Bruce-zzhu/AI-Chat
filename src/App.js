@@ -70,19 +70,20 @@ function App() {
       
     </Container>
     <BottomContainer>
-    <InputContainer>
-      <textarea 
-        rows='1' 
-        placeholder='Send a message...' 
-        onChange={(e) => setInput(e.target.value)} 
-        value={input}
-        onKeyDown={handleKeyPress}
-      />
-      <span onClick={getResponse}>
-        <img alt='Send' src={sendIcon} />
-      </span>
-    </InputContainer>
-  </BottomContainer>
+      <InputContainer>
+        <textarea 
+          rows='1' 
+          placeholder='Send a message...' 
+          onChange={(e) => setInput(e.target.value)} 
+          value={input}
+          onKeyDown={handleKeyPress}
+        />
+        <span onClick={getResponse}>
+          <img alt='Send' src={sendIcon} />
+        </span>
+      </InputContainer>
+      <Copyright>Copyright © OpenAI</Copyright>
+    </BottomContainer>
   </>
   );
 }
@@ -112,7 +113,6 @@ const InputContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0 30px 0;
 
   textarea {
     width: 50% !important;
@@ -164,3 +164,7 @@ const Message = styled.div`
   }
 `
 
+const Copyright = styled.p`
+  text-align: center;
+  font-size: 0.8rem;
+`
