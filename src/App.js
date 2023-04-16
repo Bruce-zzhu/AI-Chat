@@ -56,7 +56,7 @@ function App() {
   return (
     <>
     <Container>
-      <h1>Chat GPT</h1>
+      <h1>Mock Chat GPT</h1>
       <History>
         {messages.map((message, index) => (
           <MessageRow key={index} role={message.role}>
