@@ -9,7 +9,7 @@ Mock ChatGPT
 ```
 REACT_APP_OPENAI_KEY=<you_key>
 ```
-4. Run the project by
+4. Run the project using the command prompt
 ```
 npm install
 ```
